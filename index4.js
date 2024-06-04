@@ -22,14 +22,14 @@ app.post('/api/users',(req,res)=>{
 })
 
 
-// app.get('/users',(req,res)=>{
-//   const html = `
-//     <ul>
-//       ${users.map(user => `<li>${user.first_name} ${user.last_name}</li>`).join('')}
-//     </ul>
-//   `
-//   res.send(html)
-// })
+app.get('/users',(req,res)=>{
+  const html = `
+    <ul>
+      ${users.map(user => `<li>${user.first_name} ${user.last_name}</li>`).join('')}
+    </ul>
+  `
+  res.send(html)
+})
 
 // app.get('/users/:id',(req,res)=>{
 //   const id = req.params.id
